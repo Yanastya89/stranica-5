@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 1440px;
+    margin: auto;
+    min-height: 100%;
+    overflow: hidden; /* чтобы не вызодило за экран   */ */
+  }
+
+  .header,
+  .footer {
+    background-color: rgb(185, 166, 203);
+  }
+
+  .header{
+   flex-basis: 15%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+
+  .main {
+   display: flex;
+  flex: 1 1 auto;
+
+
+  }
+
+  .section{
+   background-color: rgb(234, 235, 235);
+   flex-basis: 70%;
+   display: flex;
+   flex-flow: column;
+   row-gap: 10px;
+   padding: 15px;
+
+}
+
+.sect1 {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.sect2  {
+flex: 0.5;
+    display: flex;
+     column-gap: 30px;
+  }
+
+  .sect2in{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+align-items: center;
+  }
+
+.sect3 {
+    flex: 0.5;
+    display: flex;
+justify-content: center;
+align-items: center;
+
+}
+ .sect2in, .sect3 {
+  background-color: bisque;
+
+ }
+
+  .aside {
+    background-color: rgb(183, 224, 212);
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 15px;
+
+  }
+
+  .footer {
+   flex-basis: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer div {
+    background-color: rgb(236, 194, 246);
+    padding: 30px;
+
+  }
